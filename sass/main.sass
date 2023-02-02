@@ -1,0 +1,163 @@
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+
+*:before, *:after
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+
+body
+	min-width: 320px
+	position: relative
+	line-height: 1.4
+	font-weight: 400
+	overflow-x: hidden
+	margin: 0
+	height: 100vh
+	font-family: 'Roboto Serif', serif
+	
+p
+	margin: 0
+
+a
+	text-decoration: none
+	outline: none
+	display: inline-block
+	color: #000
+
+img
+	max-width: 100%
+	height: auto
+	vertical-align: bottom
+
+ul li,
+ol li
+	list-style: none
+	display: block
+	margin: 0
+
+span
+	display: inline-block
+
+ul, ol
+	display: block
+	margin: 0
+	padding-left: 0
+
+button
+	outline: none
+	border: 0
+	padding: 0
+	cursor: pointer
+
+h1, h2, h3, h4, h5, h6
+	margin: 0
+	font-weight: normal
+
+strong
+	display: inline-block
+
+.site-wrap
+	overflow: hidden
+.container
+	margin: 0 auto
+	position: relative
+	padding: 0 15px
+	max-width: 1030px
+	width: 100%
+
+//ColorVariables
+$colorBg1: #FAFAFA
+$colorBg2: #fff
+$colorButton: #EFEFF0
+$colorError: #FF392E
+$colorFrame: #EBEBF0
+$colorSite: #0100D3
+$colorTxt: #C5C5C7
+$colorBlue: #2F80ED
+$colorDark: #7B828A
+$colorGreen: #30DB5B
+$colorBlack: #262626
+$colorOrange: #F15A2C
+
+
+
+.page-reviews
+	padding-left: 40px
+	&-title
+		font-size: 24px
+		font-weight: 500
+	&-wrapper
+		margin-top: 60px
+		&__list
+			&--line
+				display: flex
+				justify-content: space-between
+				padding-bottom: 23px
+				border-bottom: 1px solid $colorFrame
+				margin-bottom: 10px
+				position: relative
+				&::before
+					content: ''
+					display: block
+					position: absolute
+					top: 30px
+					height: 1px
+					width: 100%
+					background: $colorFrame
+				&:last-child
+					margin-bottom: 0
+			&--left,
+			&--right
+				display: flex
+			&--left
+			&--right
+				max-width: 325px
+				width: 100%
+				justify-content: space-between
+			&--item
+			&--wrp
+				margin-right: 30px
+				&.list--wrp-mr
+					margin-right: 0
+			&--title
+				color: $colorTxt
+				font-size: 16px
+			&--image
+			&--img
+				min-width: 100px
+				max-width: 100px
+			&--data,
+			&--link,
+			&--review,
+			&--rating,
+			&--image
+				margin-top: 28px
+				color: $colorBlack
+			&--rating-img
+				min-width: 82px
+				max-width: 82px
+			&--link
+				max-width: 385px
+				width: 100%
+				text-decoration: underline
+				&:hover
+					color: blue
